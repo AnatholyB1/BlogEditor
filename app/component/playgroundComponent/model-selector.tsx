@@ -26,7 +26,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { DataType} from "@/typing"
+import { Category} from "@/typing"
 import { useFrappeGetDocList } from "frappe-react-sdk"
 import { PostContext } from "@/provider/postProvider"
 import { useContext, useEffect } from "react"
@@ -34,8 +34,8 @@ import { useContext, useEffect } from "react"
 
 export function ModelSelector({mode} : {mode : string} ) {
   const [open, setOpen] = React.useState(false)
-  const [selectedModel, setSelectedModel] = React.useState<DataType>()
-  var {data ,isLoading} = useFrappeGetDocList<DataType>('Blog Category',{fields : [ 'title',
+  const [selectedModel, setSelectedModel] = React.useState<Category>()
+  var {data ,isLoading} = useFrappeGetDocList<Category>('Blog Category',{fields : [ 'title',
   'name',
   'published'
    ]} )
@@ -113,7 +113,7 @@ export function ModelSelector({mode} : {mode : string} ) {
 }
 
 interface ModelItemProps {
-  model: DataType
+  model: Category
   isSelected: boolean
   onSelect: () => void
 }
