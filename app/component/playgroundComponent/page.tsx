@@ -1,11 +1,10 @@
 import React from 'react'
 import Composer from './composer';
 import { useContext } from 'react';
-import { PostContext } from '@/provider/postProvider';
 import { PageContext } from '@/provider/pageProvider';
 
 
-const Page = ({page =false} : {page? : boolean}) => {
+const Page = () => {
 
     const pageContext = useContext(PageContext)
     let data = pageContext.data
