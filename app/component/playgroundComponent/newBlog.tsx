@@ -1,3 +1,4 @@
+'use client'
 import Composer from './composer';
 import { useFormik } from 'formik';
 import { useFrappeCreateDoc, useFrappeFileUpload } from 'frappe-react-sdk';

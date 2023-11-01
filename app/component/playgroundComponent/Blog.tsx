@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Composer from './composer';
 import { useContext } from 'react';

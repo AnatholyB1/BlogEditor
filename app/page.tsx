@@ -1,3 +1,4 @@
+'use server'
   import React from 'react';
   import { cookies } from 'next/headers'
   import Blog from './pages/blog/page';

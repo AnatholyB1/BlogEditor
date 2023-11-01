@@ -1,3 +1,4 @@
+'use client'
 import { BlockNoteView, useBlockNote} from '@blocknote/react';
 import { useFormik } from 'formik';
 import { useFrappeCreateDoc, useFrappeFileUpload } from 'frappe-react-sdk';

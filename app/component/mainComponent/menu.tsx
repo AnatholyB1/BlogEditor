@@ -1,3 +1,4 @@
+'use client'
 import {
     Menubar,
   } from "@/components/ui/menubar"

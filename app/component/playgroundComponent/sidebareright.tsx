@@ -1,3 +1,4 @@
+'use client'
 import React, { useContext } from "react"
 import { ModelSelector } from "./model-selector"
 import { DatePicker } from "./publishdate-selector"

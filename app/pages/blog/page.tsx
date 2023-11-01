@@ -1,4 +1,4 @@
-
+'use client'
 import React from "react";
 import MusicPage from "../../component/main";
 import { Suspense } from "react"

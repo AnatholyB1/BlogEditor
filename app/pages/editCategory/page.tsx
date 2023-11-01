@@ -1,3 +1,4 @@
+'use client'
 import PlaygroundPage from "@/app/component/playground"
 import { Suspense } from "react"
 

@@ -1,3 +1,4 @@
+'use client'
 import React, {Suspense} from "react";
 import PreviewPage from "@/app/component/preview";
 

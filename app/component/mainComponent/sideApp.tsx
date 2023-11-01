@@ -1,3 +1,4 @@
+'use client'
 import { AnimationContext } from "@/provider/animationProvider"
 import { useContext } from "react"
 import { X } from "lucide-react"

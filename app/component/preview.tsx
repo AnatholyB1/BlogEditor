@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Headbar from "./previewComponent/headbar";
 import Main from "./previewComponent/main";

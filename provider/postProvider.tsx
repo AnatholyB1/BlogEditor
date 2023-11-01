@@ -1,3 +1,4 @@
+'use client'
 import { PostContextType, contextPost, DataDocList } from "@/typing";
 import { createContext, useEffect, useState, useContext } from "react";
 import { UpdateObject } from "@/typing";
