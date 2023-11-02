@@ -7,7 +7,6 @@ const PlaygroundPage = dynamic(
 )
 
 export default function ViewPage () {
-    if(typeof window !== "undefined" )
     return(
         <PlaygroundPage state={'view'} page={'Page'}></PlaygroundPage>
     )

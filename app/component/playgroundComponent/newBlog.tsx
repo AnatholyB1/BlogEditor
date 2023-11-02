@@ -43,7 +43,7 @@ const NewBlog = ({page =false} : {page? : boolean}) => {
     const { createDoc, isCompleted, loading : isLoading } = useFrappeCreateDoc();
     const postContext = useContext(PostContext);
     const [file, setFile] = useState<File>()
-    const {upload,progress, loading} = useFrappeFileUpload()
+    const {upload} = useFrappeFileUpload()
     const [url , setUrl] = useState('')
     const router = useRouter()
 
@@ -88,7 +88,7 @@ const NewBlog = ({page =false} : {page? : boolean}) => {
                     /** If the file access is private then set to TRUE (optional) */
                     "isPrivate": false,
                     "doctype" : "Blog Post",
-                    "docname" : blocks![0].content[0].text,
+                    "docname" : blocks[0].content[0].text,
                     "fieldname" : "meta_image"
                   }).then((response) => {setUrl(response.file_url)})
             }
@@ -120,7 +120,7 @@ const NewBlog = ({page =false} : {page? : boolean}) => {
     return (
         <form className="flex flex-1 flex-col space-y-4" onSubmit={formik.handleSubmit}>
             <div className="h-screen w-screen flex-1 p-4  rounded-md " >
-            <Composer value={Contents} onChange={(value: any) => formik.setFieldValue("content_json", { blocks: value })}></Composer>
+            <Composer value={Contents} onChange={(value: any) => {formik.setFieldValue("content_json", { value } ),setBlocks(value)}}></Composer>
             </div>
         </form>
     );

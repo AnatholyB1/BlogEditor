@@ -2,15 +2,14 @@
 import {   BlockNoteView,
     useBlockNote,
     createReactBlockSpec,
-    InlineContent,
-    ReactSlashMenuItem,
-    getDefaultReactSlashMenuItems,
     DragHandleMenuItem,
     DragHandleMenu,
     RemoveBlockButton,
     DefaultSideMenu,
     SideMenuPositioner,
-    DefaultDragHandleMenu
+    HyperlinkToolbarPositioner,
+    FormattingToolbarPositioner,
+    SlashMenuPositioner
 
     } from '@blocknote/react';
     import {
@@ -49,7 +48,10 @@ export default function Composer  ({ value , onChange , viewOnly = false, classN
         editable: !viewOnly,
         blockSchema: customSchema,
         
-        onEditorContentChange: (editor) => {(onChange && onChange(editor.topLevelBlocks)) ; view.changeBlock(editor.topLevelBlocks) }
+        onEditorContentChange: (editor) => {
+          view.changeBlock(editor.topLevelBlocks)
+          onChange && onChange(editor.topLevelBlocks) 
+           }
     });
 
     const enableDropping = (event : React.DragEvent) =>
@@ -107,10 +109,14 @@ export default function Composer  ({ value , onChange , viewOnly = false, classN
     }
     return (
         <BlockNoteView onDragOver={enableDropping} onDrop={handleDrop} className={cn("h-screen w-screen  flex-1 p-4 ",className)} editor={editor} >
+            <FormattingToolbarPositioner editor={editor} />
+            <HyperlinkToolbarPositioner editor={editor} />
+            <SlashMenuPositioner editor={editor} />
             <SideMenuPositioner
                 editor={editor}
                 sideMenu={(props) => (
-                <DefaultSideMenu {...props} dragHandleMenu={CustomDragHandleMenu} />
+                <DefaultSideMenu {...props} dragHandleMenu={CustomDragHandleMenu}  />
+
                 )}
             />
         </BlockNoteView>
