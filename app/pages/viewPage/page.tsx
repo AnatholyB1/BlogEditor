@@ -5,12 +5,10 @@ const PlaygroundPage = dynamic(
   () => import('../../component/playground'),
   { ssr: false }
 )
-import { Suspense } from "react"
 
 export default function ViewPage () {
+    if(typeof window !== "undefined" )
     return(
-        <Suspense fallback={'Loading...'}>
         <PlaygroundPage state={'view'} page={'Page'}></PlaygroundPage>
-        </Suspense>
     )
 }

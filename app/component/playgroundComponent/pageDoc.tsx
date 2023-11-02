@@ -6,7 +6,7 @@ import { PageContext } from '@/provider/pageProvider';
 
 
 const Page = () => {
-
+    
     const pageContext = useContext(PageContext)
     let data = pageContext.data
 

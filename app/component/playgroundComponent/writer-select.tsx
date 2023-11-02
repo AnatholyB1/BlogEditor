@@ -59,7 +59,7 @@ export function WriterSelector({mode} : {mode : string} ) {
     <div className="grid gap-2">
       <HoverCard openDelay={200}>
         <HoverCardTrigger asChild>
-          <Label htmlFor="model">Writter</Label>
+          <h1>Writter</h1>
         </HoverCardTrigger>
         <HoverCardContent
           align="start"

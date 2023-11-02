@@ -9,16 +9,16 @@ export default function Heading () {
 <rect x="10.5" y="6.5" width="92" height="40" stroke="#00B2FF"/>
 </g>
 <path d="M22.7809 36H19.869L26.412 17.8182H29.5814L36.1243 36H33.2124L28.0721 21.1207H27.9301L22.7809 36ZM23.2692 28.88H32.7152V31.1882H23.2692V28.88Z" fill="#A4A4A4"/>
-<path d="M44 16L44 37" stroke="#00B2FF" stroke-width="2"/>
-<path d="M41 17H47" stroke="#00B2FF" stroke-width="2"/>
-<path d="M41 36H47" stroke="#00B2FF" stroke-width="2"/>
+<path d="M44 16L44 37" stroke="#00B2FF" strokeWidth="2"/>
+<path d="M41 17H47" stroke="#00B2FF" strokeWidth="2"/>
+<path d="M41 36H47" stroke="#00B2FF" strokeWidth="2"/>
 <rect x="9" y="5" width="3" height="3" fill="#00B2FF"/>
 <rect x="101" y="5" width="3" height="3" fill="#00B2FF"/>
 <rect x="9" y="45" width="3" height="3" fill="#00B2FF"/>
 <rect x="101" y="45" width="3" height="3" fill="#00B2FF"/>
 <defs>
-<filter id="filter0_d_207_21497" x="0" y="0" width="113" height="61" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter0_d_207_21497" x="0" y="0" width="113" height="61" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="5"/>

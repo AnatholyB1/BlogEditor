@@ -60,9 +60,10 @@ export function ModelSelector({mode} : {mode : string} ) {
     <div className="grid gap-2">
       <HoverCard openDelay={200}>
         <HoverCardTrigger asChild>
-          <Label htmlFor="model">Category</Label>
+          <h1 >Category</h1>
         </HoverCardTrigger>
         <HoverCardContent
+        
           align="start"
           className="w-[260px] text-sm"
           side="left"

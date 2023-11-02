@@ -16,7 +16,7 @@ import  {useRouter}  from "next/navigation"
 import { PostContext } from "@/provider/postProvider"
 import { useContext, useState } from "react"
 import { UpdateObject, contextType } from "@/typing"
-import Page from "./playgroundComponent/page"
+import Page from "./playgroundComponent/pageDoc"
 import EditPage from "./playgroundComponent/editPage"
 import NewPage from "./playgroundComponent/newPage"
 import { TabContextType } from "@/typing"
@@ -83,22 +83,6 @@ export default function PlaygroundPage({state, page} : {state : string, page : T
   }
   return (
     <>
-      <div className="md:hidden w-screen h-screen">
-        <Image
-          src="/examples/playground-light.png"
-          width={1280}
-          height={916}
-          alt="Playground"
-          className="block dark:hidden"
-        />
-        <Image
-          src="/examples/playground-dark.png"
-          width={1280}
-          height={916}
-          alt="Playground"
-          className="hidden dark:block"
-        />
-      </div>
       <div className="hidden w-screen h-screen flex-row md:flex">
         {page == ('Categories' || 'Blogger') ? (<> 
         <SidebarMain/>

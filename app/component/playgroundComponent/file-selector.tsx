@@ -41,7 +41,7 @@ export default function FileSelection ({mode} : {mode : string} ) {
         <div className="grid gap-2" >
         <HoverCard openDelay={200}>
         <HoverCardTrigger asChild>
-          <Label htmlFor="model">Featured Image</Label>
+          <h1>Featured Image</h1>
         </HoverCardTrigger>
         <HoverCardContent
           align="start"
