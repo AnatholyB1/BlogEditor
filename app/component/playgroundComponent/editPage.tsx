@@ -31,7 +31,7 @@ import { DataDocList } from "@/typing";
     },[isCompleted])
 
     useEffect(() =>{
-        if(pageContext.update == 1)
+        if(typeof window !== 'undefined' && pageContext.update == 1)
         {
             formik.handleSubmit()
         }

@@ -43,7 +43,7 @@ export default function Header ({className} : {className ?: string}) {
                     <Separator orientation="vertical" ></Separator>
                     <div className="flex w-[320px] min-h-[40px] h-[40px] py-2 px-4 items-center gap-3 rounded-md bg-[#F4F4F5]">
                         <ZaviagoIcon></ZaviagoIcon>
-                        <input className="outline-none focus:border-0 bg-[#F4F4F5]" type="text" placeholder="Search or type a command" />
+                        <input id='search' className="outline-none focus:border-0 bg-[#F4F4F5]" type="text" placeholder="Search or type a command" />
                         <span className="text-[#71717A] w-[70px] h-[20px]  font-Inter text-[12px] font-normal leading-[20px]">(CTRL + G)</span>
                     </div>
                 </div>

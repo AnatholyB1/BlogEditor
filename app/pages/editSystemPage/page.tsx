@@ -1,5 +1,10 @@
 'use client'
-import PlaygroundPage from "../../component/playground"
+import dynamic from 'next/dynamic'
+
+const PlaygroundPage = dynamic(
+  () => import('../../component/playground'),
+  { ssr: false }
+)
 import { Suspense } from "react"
 
 export default function EditSystemPage () {

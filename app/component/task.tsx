@@ -120,22 +120,6 @@ export default function TaskPage() {
   },[error, tabType.mutate])
   return (
     <>
-      <div className="md:hidden">
-        <Image
-          src="/examples/tasks-light.png"
-          width={1280}
-          height={998}
-          alt="Playground"
-          className="block dark:hidden"
-        />
-        <Image
-          src="/examples/tasks-dark.png"
-          width={1280}
-          height={998}
-          alt="Playground"
-          className="hidden dark:block"
-        />
-      </div>
       <div className="flex h-full flex-1 flex-col gap-[24px] p-8  flex-wrap content-center">
         <div className="flex items-center justify-between space-y-2">
           <div>

@@ -1,6 +1,11 @@
 'use client'
 import React, {Suspense} from "react";
-import PreviewPage from "@/app/component/preview";
+import dynamic from 'next/dynamic'
+
+const PreviewPage = dynamic(
+  () => import('@/app/component/preview'),
+  { ssr: false }
+)
 
 export default function Preview () {
     return (

@@ -1,6 +1,12 @@
 'use client'
-import PlaygroundPage from "../../component/playground"
+
 import { Suspense } from "react"
+import dynamic from 'next/dynamic'
+
+const PlaygroundPage = dynamic(
+  () => import('../../component/playground'),
+  { ssr: false }
+)
 
 export default function EditBlog () {
     return(
