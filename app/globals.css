@@ -137,7 +137,7 @@
 .SideBarRight{
   position: fixed;
   top : 140px;
-  right: -350px;
+  right: -370px;
   display: flex;
   padding: 0px 24px;
   flex-direction: column;
@@ -149,7 +149,7 @@
 }
 
 .SideBarRight.open{
-  right: 32px;
+  right: 0px;
 }
 
 .ItemSideBar{
@@ -173,12 +173,17 @@
 .editor{
   position : fixed;
   top : 120px;
-  left : 350px;
+  left : 360px;
+  right : 0px;
   transition: all 0.3s ease-in-out; /* Ajouter une transition fluide */
 }
 
 .editor.open{
   left: 670px;
+}
+
+.editor.openright{
+  right : 370px;
 }
 
 .preview{

@@ -9,7 +9,7 @@ import { AnimationContext } from "@/provider/animationProvider"
 export default function SideBarRight ({state} : {state : string}) {
     const animation = useContext(AnimationContext)
     return (
-        <div className={`SideBarRight ${animation.sidebarRight && ('open')}`}>
+        <div className={`SideBarRight ${animation.sidebarRight && ('open')} bg-white boder-r border-grey`}>
                 <ModelSelector mode={state} />
                 <DatePicker mode={state}></DatePicker>
                 <FileSelection mode={state}></FileSelection>

@@ -54,10 +54,8 @@ import { DataDocList } from "@/typing";
     return (
         <>
             {docLoading ? 'loading ...' :             
-            <form className="flex h-full flex-col space-y-4" onSubmit={formik.handleSubmit}>
-                <div className='flex h-full flex-col space-y-4 '>
-                    {data ? <Composer value={formik.initialValues.content_json.blocks} onChange={(value: any) => formik.setFieldValue("content_json", { blocks: value })} /> :  <PostSkeleton></PostSkeleton>}
-                </div>
+            <form className="w-full" onSubmit={formik.handleSubmit}>
+                    {data ? <Composer value={formik.initialValues.content_json.blocks} onChange={(value: any) => formik.setFieldValue("content_json", { block : value })} /> :  <PostSkeleton></PostSkeleton>}
             </form>}
         
         </>

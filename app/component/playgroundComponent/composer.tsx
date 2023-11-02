@@ -108,7 +108,7 @@ export default function Composer  ({ value , onChange , viewOnly = false, classN
         
     }
     return (
-        <BlockNoteView onDragOver={enableDropping} onDrop={handleDrop} className={cn("h-screen w-screen  flex-1 p-4 ",className)} editor={editor} >
+        <BlockNoteView onDragOver={enableDropping} onDrop={handleDrop} className={cn(" flex-1 p-4 ",className)} editor={editor} >
             <FormattingToolbarPositioner editor={editor} />
             <HyperlinkToolbarPositioner editor={editor} />
             <SlashMenuPositioner editor={editor} />

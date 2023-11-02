@@ -126,9 +126,9 @@ export default function PlaygroundPage({state, page} : {state : string, page : T
               {state != 'view' ? <PresetSave page={page} /> : null }
             </div>
           </div>
-          <Tabs defaultValue="complete" className={`editor flex w-full p-6 8 6 0 items-start flex-1 self-stretch ${animationContext.itemSideBar ? 'open' : ''}`}>
+          <Tabs defaultValue="complete" className={`editor flex  p-6 8 6 0 items-start flex-1 self-stretch ${animationContext.itemSideBar ? 'open' : ''} ${animationContext.sidebarRight ? 'openright' : ''}`}>
             <SideBarRight state={state}/>
-                  <div className="">
+                  <div className="w-full">
                       {(() => {
                         switch(page)
                         {
