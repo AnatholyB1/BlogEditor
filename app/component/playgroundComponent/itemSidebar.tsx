@@ -1,3 +1,4 @@
+'use client'
 import React, { useContext } from "react";
 import { cn } from "@/lib/utils";
 import { AnimationContext } from "@/provider/animationProvider";
